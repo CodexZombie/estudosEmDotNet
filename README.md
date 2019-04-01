@@ -1,15 +1,33 @@
-"# estudosEmDotNet" 
+# Estudos em .NET
 
 Repositório dedicado a testes, exercicios e estudos em .NET
 
-<h2>Formação .NET</h2>
-<p>Acompanhamento das aulas da Alura na Formação "Desenvolvedor .NET</p>
+## Formação .NET
+Acompanhamento das aulas da Alura na Formação "Desenvolvedor .NET
 
 <dl>
-    <dt>Parte 1 - Introdução ao C# e Orientação a Objetos</dt>
-    <dd>Curso 1 - Variáveis, Condicionais e Laços de repetição;</dd>
-    <dd>Curso 2 - Classe, Tipos, Função, Namespace, Composição, Props, Encapsulamento, Construtores e membros estáticos;</dd>
-    <dd>Curso 3 - Sobrecarga, Herança, Polimorfismo, Classes/Métodos abstratos e Interfaces</dd>
+    <dt>Curso 1 - Introdução ao C# e Orientação a Objetos: </dt>
+    <dd>Parte 1 - Variáveis, Condicionais e Laços de repetição; <a target="_blank" href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-parte-1-primeiros-passos">certificado</a></dd>
+    <dd>Parte 2 - Classe, Tipos, Função, Namespace, Composição, Props, Encapsulamento, Construtores e membros estáticos; <a target="_blank" href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-parte-2-introducao-orientacao-objetos">certificado</a></dd>
+    <dd>Parte 3 - Sobrecarga, Herança, Polimorfismo, Classes/Métodos abstratos e Interfaces; <a target="_blank" href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-parte-3-heranca-interfaces-polimorfismo">certificado</a></dd>
     <br>
-    <dt>Parte 2 - Exceptions, Bibliotecas, Documentação, Strings e RegEx<dt>
+    <dt>Curso 2 - Exceptions, Bibliotecas, Documentação, Strings e RegEx:<dt>
+    <dd>Parte 4 - Tratamento de Exceções, ArgumentException, ParamName, nameof, rich exceptions, StackTrace, InnerException, Finally e using; <a target="_blank" href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-parte-4-excecoes">certificado</a></dd>
+<!--
+    <dd>Parte 5 - Bibliotecas, Modificadores de acesso em blibliotecas, Referência de DLL, Documentação e NuGet; <a target="_blank" href="">certificado</a></dd>
+    <dd>Parte 6 - Strings, Metodos e Propiedades, metodos de manipulação, Expressões Regulares e Class Object; <a target="_blank" href="">certificado</a></dd>
+    <br>
+    <dt>Curso 3 - Listas:</dt>
+    <dd>Parte 7 - Array, Indexadores, arg params, Genéricos; <a target="_blank" href="">certificado</a></dd>
+    <dd>Parte 8 - List&lt;T&gt;, métodos de extensão, VAR, Sort, IComparable, IComparer, OrderBy, Exp. Lambda, Linq e Where; <a target="_blank" href="">certificado</a></dd>
+    <dd>Parte 9 - FileStream, StreamReader, StramWriter (Parse), Flush, Binarios, Console Streams; <a target="_blank" href="">certificado</a></dd>
+    <br>
+    <dt>Curso 4 - Banco de Dados com Entity Framework Core:</dt>
+    <dd>Parte 10 - Manipulação de objetos, SQL, modelo de classes, cardinalidade, consultas; <a target="_blank" href="">certificado</a></dd>
+    <br>
+    <dt>Curso 5 - Web / ASP.NET Core MVC:</dt>
+    <dd>Parte 12 - Servidor web, requisições, roteamento do AspNet Core, UX, MVC; <a target="_blank" href="">certificado</a></dd>
+    <dd>Parte 13 - Projeto: aplicação e-commerce com banco de dados, catálogo de produtos, Session e carrinho; <a target="_blank" href="">certificado</a></dd>
+    <dd>Parte 14 - AJAX, Formulário e gravação dos dados; <a target="_blank" href="">certificado</a></dd>
+-->
 </dl>
