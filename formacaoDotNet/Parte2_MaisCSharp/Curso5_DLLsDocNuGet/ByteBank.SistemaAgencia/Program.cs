@@ -14,7 +14,7 @@ namespace ByteBank.SistemaAgencia
         {
             //TestaContaCorrente();
 
-            DateTime dataFimPagto = new DateTime(2019, 06, 17);
+            DateTime dataFimPagto = new DateTime(2019, 05, 07);
             DateTime dataCorrente = DateTime.Now;
 
             TimeSpan diferenca = dataFimPagto - dataCorrente;
