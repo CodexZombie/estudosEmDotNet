@@ -1,5 +1,6 @@
 ﻿using ByteBank.Modelos;
 using System;
+using Humanizer;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,24 +14,21 @@ namespace ByteBank.SistemaAgencia
         {
             //TestaContaCorrente();
 
-            DateTime dataFimPagto = new DateTime(2019, 08, 17);
+            DateTime dataFimPagto = new DateTime(2019, 06, 17);
             DateTime dataCorrente = DateTime.Now;
 
             TimeSpan diferenca = dataFimPagto - dataCorrente;
-            
+
+            string mensagem = TimeSpanHumanizeExtensions.Humanize(diferenca);
 
             Console.WriteLine(dataFimPagto);
             Console.WriteLine(dataCorrente);
-            Console.WriteLine(GetIntervaloDeTempoLegivel(diferenca));
+            Console.WriteLine(mensagem);
 
             Console.ReadLine();
         }
 
-        static string GetIntervaloDeTempoLegivel(TimeSpan timeSpan)
-        {
-            return timeSpan.Days + " dias.";
-        }
-
+        
         static void TestaContaCorrente()
         {
             ContaCorrente conta = new ContaCorrente(123, 1234567);
