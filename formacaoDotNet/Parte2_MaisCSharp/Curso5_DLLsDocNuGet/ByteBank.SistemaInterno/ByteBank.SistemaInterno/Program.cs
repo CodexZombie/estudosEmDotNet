@@ -12,9 +12,10 @@ namespace ByteBank.SistemaInterno
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente(123, 1234567);
+            conta.Sacar(50);
 
             Console.WriteLine(conta.Numero);
-
+            
             Console.ReadLine();
         }
     }

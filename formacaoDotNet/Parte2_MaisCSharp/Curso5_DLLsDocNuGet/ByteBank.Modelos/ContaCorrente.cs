@@ -65,6 +65,12 @@ namespace ByteBank.Modelos
             TaxaOperacao = 30 / TotalDeContasCriadas;
         }
 
+        /// <summary>
+        /// Realiza o saque e atualiza o valor da propriedade <see cref="Saldo"/>.
+        /// </summary>
+        /// <exception cref="ArgumentException">Exceção lançada quando um valor negativo é utilizado no argumento <paramref name="valor"/>.</exception>
+        /// <exception cref="SaldoInsuficienteException">Exceção lançada quando o valor de <paramref name="valor"/> é maior do que o valor da propriedade <see cref="Saldo"/>.</exception>
+        /// <param name="valor">Representa o valor do saque. Deve ser maior do que zero e maior que o <see cref="Saldo"/>.</param>
         public void Sacar(double valor)
         {
             if (valor < 0)
