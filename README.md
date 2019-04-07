@@ -13,8 +13,8 @@ Acompanhamento das aulas da Alura na Formação "Desenvolvedor .NET
     <br>
     <dt>Curso 2 - Exceptions, Bibliotecas, Documentação, Strings e RegEx:<dt>
     <dd>Parte 4 - Tratamento de Exceções, ArgumentException, ParamName, nameof, rich exceptions, StackTrace, InnerException, Finally e using; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-parte-4-excecoes" target="_blank">certificado</a></dd>
+    <dd>Parte 5 - Bibliotecas, Modificadores de acesso em blibliotecas, Referência de DLL, Documentação e NuGet; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-biblioteca-dll-documentacao-nuget" target="_blank">certificado</a></dd>
 <!--
-    <dd>Parte 5 - Bibliotecas, Modificadores de acesso em blibliotecas, Referência de DLL, Documentação e NuGet; <a href="" target="_blank">certificado</a></dd>
     <dd>Parte 6 - Strings, Metodos e Propiedades, metodos de manipulação, Expressões Regulares e Class Object; <a href="" target="_blank">certificado</a></dd>
     <br>
     <dt>Curso 3 - Listas:</dt>
