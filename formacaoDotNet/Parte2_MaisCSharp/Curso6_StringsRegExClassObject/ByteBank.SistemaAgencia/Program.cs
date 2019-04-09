@@ -12,30 +12,17 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            //TestaContaCorrente();
+            //string url = "pagina?modedaOrigem=real&moedaDestino=dolar";
 
-            DateTime dataFimPagto = new DateTime(2019, 05, 07);
-            DateTime dataCorrente = DateTime.Now;
+            string textoVazio = "";
+            string textoNulo = null;
+            string textoQualquer = "asdfasdfasdf";
 
-            TimeSpan diferenca = dataFimPagto - dataCorrente;
-
-            string mensagem = TimeSpanHumanizeExtensions.Humanize(diferenca);
-
-            Console.WriteLine(dataFimPagto);
-            Console.WriteLine(dataCorrente);
-            Console.WriteLine(mensagem);
+            Console.WriteLine(string.IsNullOrEmpty(textoVazio));
+            Console.WriteLine(string.IsNullOrEmpty(textoNulo));
+            Console.WriteLine(string.IsNullOrEmpty(textoQualquer));
 
             Console.ReadLine();
-        }
-
-        
-        static void TestaContaCorrente()
-        {
-            ContaCorrente conta = new ContaCorrente(123, 1234567);
-
-            new ContaCorrente(123, 456).Sacar(100);
-
-            Console.WriteLine(conta.Numero);
         }
     }
 }
