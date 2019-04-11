@@ -9,15 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio032_MontandoUmaURL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio033_IndexOf", "Exercicio033_IndexOf\Exercicio033_IndexOf.csproj", "{59DABBB1-A164-499B-A997-6465C10433C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteIsNullOrEmpty", "TesteIsNullOrEmpty\TesteIsNullOrEmpty.csproj", "{E265C636-77DE-4C44-B4D3-613FEA70EFD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio034_IsNullOrEmpty", "TesteIsNullOrEmpty\Exercicio034_IsNullOrEmpty.csproj", "{E265C636-77DE-4C44-B4D3-613FEA70EFD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLengthESobrecargasDeIndexOf", "TesteLengthESobrecargasDeIndexOf\TesteLengthESobrecargasDeIndexOf.csproj", "{51571439-E150-44AF-8505-F59B2DB2411C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio035_LengthESobrecargasDeIndexOf", "TesteLengthESobrecargasDeIndexOf\Exercicio035_LengthESobrecargasDeIndexOf.csproj", "{51571439-E150-44AF-8505-F59B2DB2411C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteMetodoRemove", "TesteMetodoRemove\TesteMetodoRemove.csproj", "{71632198-4DBF-45BF-A8C4-B23F75DD5E46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio036_MetodoRemove", "TesteMetodoRemove\Exercicio036_MetodoRemove.csproj", "{71632198-4DBF-45BF-A8C4-B23F75DD5E46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteToLowerToUpper", "TesteToLowerToUpper\TesteToLowerToUpper.csproj", "{AA557A6B-3AFD-4D59-B54B-747069AAE316}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio037_ToLowerToUpper", "TesteToLowerToUpper\Exercicio037_ToLowerToUpper.csproj", "{AA557A6B-3AFD-4D59-B54B-747069AAE316}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteStartsWithEndsWithContains", "TesteStartsWithEndsWithContains\TesteStartsWithEndsWithContains.csproj", "{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio038_StartsWithEndsWithContains", "TesteStartsWithEndsWithContains\Exercicio038_StartsWithEndsWithContains.csproj", "{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio039_RegularExpression", "Exercicio039_RegularExpression\Exercicio039_RegularExpression.csproj", "{26C40A59-745B-436D-AD1E-B88C24067D06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C40A59-745B-436D-AD1E-B88C24067D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C40A59-745B-436D-AD1E-B88C24067D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C40A59-745B-436D-AD1E-B88C24067D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C40A59-745B-436D-AD1E-B88C24067D06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
