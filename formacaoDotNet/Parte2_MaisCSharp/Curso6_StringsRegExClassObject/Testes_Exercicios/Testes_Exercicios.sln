@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteMetodoRemove", "TesteM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteToLowerToUpper", "TesteToLowerToUpper\TesteToLowerToUpper.csproj", "{AA557A6B-3AFD-4D59-B54B-747069AAE316}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteStartsWithEndsWithContains", "TesteStartsWithEndsWithContains\TesteStartsWithEndsWithContains.csproj", "{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AA557A6B-3AFD-4D59-B54B-747069AAE316}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA557A6B-3AFD-4D59-B54B-747069AAE316}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA557A6B-3AFD-4D59-B54B-747069AAE316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA01CCBA-2F1A-4D26-9F41-EDC837640C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
