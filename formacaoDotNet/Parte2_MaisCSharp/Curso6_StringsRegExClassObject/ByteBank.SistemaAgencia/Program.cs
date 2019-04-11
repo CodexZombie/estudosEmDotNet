@@ -12,37 +12,24 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            //string url = "pagina?modedaOrigem=real&moedaDestino=dolar";
-
-            //TesteIsNullOrEmpty();
-            TesteLengthESobrecargasDeIndexOf();
-
+            TestaClasseExtrator();
             Console.ReadLine();
         }
 
-        static void TesteIsNullOrEmpty()
+        static void TestaClasseExtrator()
         {
-            string textoVazio = "";
-            string textoNulo = null;
-            string textoQualquer = "asdfasdfasdf";
+            string urlParametros = "http://www.bytebank.com.br/cambio?moedaOrigem=Real&moedaDestino=Dolar&Valor=1500";
+            ExtratorValorDeArgumentosURL extrator = new ExtratorValorDeArgumentosURL(urlParametros);
 
-            Console.WriteLine(string.IsNullOrEmpty(textoVazio));
-            Console.WriteLine(string.IsNullOrEmpty(textoNulo));
-            Console.WriteLine(string.IsNullOrEmpty(textoQualquer));
-        }
+            string termoBusca = extrator.GetValor("moedaDestino");
+            Console.WriteLine("Valor de moedaDestino: " + termoBusca);
 
-        static void TesteLengthESobrecargasDeIndexOf()
-        {
-            string palavra = "modedaOrigem=real&moedaDestino=dolar";
-            string nomeArgumento = "moedaDestino";
+            termoBusca = extrator.GetValor("moedaOrigem");
+            Console.WriteLine("Valor de moedaOrigem: " + termoBusca);
 
-            int indice = palavra.IndexOf(nomeArgumento);
-            Console.WriteLine(indice);
+            termoBusca = extrator.GetValor("VAlor");
+            Console.WriteLine("Valor: " + termoBusca);
 
-            Console.WriteLine("Tamanho da string nomeArgumento: " + nomeArgumento.Length);
-            Console.WriteLine(palavra);
-            Console.WriteLine(palavra.Substring(indice));
-            Console.WriteLine(palavra.Substring(indice + nomeArgumento.Length + 1));
         }
     }
 }
