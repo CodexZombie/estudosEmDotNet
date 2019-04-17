@@ -36,6 +36,17 @@ namespace Exercicio040_Array
 
             CalculaMedia(idades);
 
+            //SYNTAX SUGAR PARA ARRAYS:
+            string[] coresCMYK = new string[]
+            {
+                "Cyan",
+                "Magenta",
+                "Yellow",
+                "blacK",
+            };
+
+            TestaArray(coresCMYK);
+
             Console.ReadLine();
         }
 
@@ -50,6 +61,15 @@ namespace Exercicio040_Array
         }
 
         static void TestaArray(bool[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"Posição {i} = {array[i]}");
+            }
+            Console.WriteLine();
+        }
+
+        static void TestaArray(string[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
