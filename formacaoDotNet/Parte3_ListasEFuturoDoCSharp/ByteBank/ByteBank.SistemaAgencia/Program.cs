@@ -12,17 +12,18 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente[] contas = new ContaCorrente[3];
+            ListaDeContaCorrente lista = new ListaDeContaCorrente();
 
-            contas[0] = new ContaCorrente(123, 1234567);
-            contas[1] = new ContaCorrente(123, 1234568);
-            contas[2] = new ContaCorrente(123, 1234569);
-
-            for (int i = 0; i < contas.Length; i++)
-            {
-                ContaCorrente conta = contas[i];
-                Console.WriteLine($"Conta {i} Agência {conta.Agencia} Número {conta.Numero}");
-            }
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            //lista.Adicionar(new ContaCorrente(123, 1234567));
+            //lista.Adicionar(new ContaCorrente(123, 1234567));
+            //lista.Adicionar(new ContaCorrente(123, 1234567));
+            //lista.Adicionar(new ContaCorrente(123, 1234567));
 
             Console.ReadLine();
         }

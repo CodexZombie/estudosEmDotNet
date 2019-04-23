@@ -26,12 +26,15 @@ namespace Exercicio040_Array
             //int[] testeAtribuicaoNula = null;
             //TestaArray(testeAtribuicaoNula);
 
-            bool[] arrayDeBooleanos = new bool[5];
-            arrayDeBooleanos[0] = true;
-            arrayDeBooleanos[1] = false;
-            arrayDeBooleanos[2] = true;
-            arrayDeBooleanos[3] = false;
-            arrayDeBooleanos[4] = true;
+            //SYNTAX SUGAR PARA ARRAYS:
+            bool[] arrayDeBooleanos = new bool[]
+            {
+                true,
+                false,
+                true,
+                false,
+                true,
+            };
             TestaArray(arrayDeBooleanos);
 
             CalculaMedia(idades);
@@ -89,6 +92,7 @@ namespace Exercicio040_Array
 
             float media = acumulador / array.Length;
             Console.WriteLine($"Média das idades = {media}");
+            Console.WriteLine();
         }
     }
 }
