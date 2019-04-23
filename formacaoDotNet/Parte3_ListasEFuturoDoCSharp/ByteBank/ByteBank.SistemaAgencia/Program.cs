@@ -20,10 +20,27 @@ namespace ByteBank.SistemaAgencia
             lista.Adicionar(new ContaCorrente(123, 1234567));
             lista.Adicionar(new ContaCorrente(123, 1234567));
             lista.Adicionar(new ContaCorrente(123, 1234567));
-            //lista.Adicionar(new ContaCorrente(123, 1234567));
-            //lista.Adicionar(new ContaCorrente(123, 1234567));
-            //lista.Adicionar(new ContaCorrente(123, 1234567));
-            //lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+
+            ContaCorrente contaTesteRemocao = new ContaCorrente(999, 9999999);
+
+            lista.Adicionar(contaTesteRemocao);
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 1234567));
+            Console.WriteLine();
+
+
+            lista.ListarContas();
+
+            lista.Remover(contaTesteRemocao);
+
+            Console.WriteLine();
+            lista.ListarContas();
 
             Console.ReadLine();
         }
