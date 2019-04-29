@@ -1,9 +1,9 @@
 # Estudos em .NET
 
-Repositório dedicado a testes, exercicios e estudos em .NET
+**Repositório dedicado a testes, exercicios e estudos em .NET**
 
 ## Formação .NET
-Acompanhamento das aulas da Alura na Formação "Desenvolvedor .NET
+Acompanhamento das aulas da Alura na Formação **_Desenvolvedor .NET_**
 
 <dl>
     <dt>Curso 1 - Introdução ao C# e Orientação a Objetos: </dt>
@@ -16,9 +16,9 @@ Acompanhamento das aulas da Alura na Formação "Desenvolvedor .NET
     <dd>Parte 5 - Bibliotecas, Modificadores de acesso em blibliotecas, Referência de DLL, Documentação e NuGet; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-biblioteca-dll-documentacao-nuget" target="_blank">certificado</a></dd>
     <dd>Parte 6 - Strings, Metodos e Propiedades, metodos de manipulação, Expressões Regulares e Class Object; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-string-regex-object" target="_blank">certificado</a></dd>
     <br>
-    <!--
     <dt>Curso 3 - Listas:</dt>
-    <dd>Parte 7 - Array, Indexadores, arg params, Genéricos; <a href="" target="_blank">certificado</a></dd>
+    <dd>Parte 7 - Array, Indexadores, arg params, Genéricos; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-string-regex-object" target="_blank">certificado</a></dd>
+<!--
     <dd>Parte 8 - List&lt;T&gt;, métodos de extensão, VAR, Sort, IComparable, IComparer, OrderBy, Exp. Lambda, Linq e Where; <ahref="" target="_blank">certificado</a></dd>
     <dd>Parte 9 - FileStream, StreamReader, StramWriter (Parse), Flush, Binarios, Console Streams; <a href="" target="_blank">certificado</a></dd>
     <br>
