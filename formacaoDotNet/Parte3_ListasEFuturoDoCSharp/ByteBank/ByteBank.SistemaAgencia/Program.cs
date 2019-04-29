@@ -16,13 +16,17 @@ namespace ByteBank.SistemaAgencia
             ListaDeContaCorrente lista = TesteCriaListaDeContas();
             TesteMetodoAdicionar(lista);
             TesteMetodoRemover(lista);
+            TesteIndexador(lista);
 
+            lista.AdicionarVarios(
+                new ContaCorrente(999, 8888888),
+                new ContaCorrente(999, 8888888),
+                new ContaCorrente(999, 8888888),
+                new ContaCorrente(999, 8888888),
+                new ContaCorrente(999, 8888888)
+                );
 
-            for (int i = 0; i < lista.Tamanho; i++)
-            {
-                ContaCorrente itemAtual = lista[i];
-                Console.WriteLine($"Item na posição {i} Ag/CC: {itemAtual.Agencia}/{itemAtual.Numero}");
-            }
+            lista.ListarContas();
 
             Console.ReadLine();
         }
@@ -63,5 +67,16 @@ namespace ByteBank.SistemaAgencia
             lista.ListarContas();
             Console.WriteLine();
         }
+
+        static void TesteIndexador(ListaDeContaCorrente lista)
+        {
+            for (int i = 0; i < lista.Tamanho; i++)
+            {
+                ContaCorrente itemAtual = lista[i];
+                Console.WriteLine($"Item na posição {i} Ag/CC: {itemAtual.Agencia}/{itemAtual.Numero}");
+            }
+            Console.WriteLine();
+        }
+
     }
 }

@@ -34,6 +34,14 @@ namespace ByteBank.SistemaAgencia
             _proximaPosicao++;
         }
 
+        public void AdicionarVarios(params ContaCorrente[] itens)
+        {
+            foreach (ContaCorrente conta in itens)
+            {
+                Adicionar(conta);
+            }
+        }
+
         private void VerificarCapacidade(int tamanhoNecessario)
         {
             if (_itens.Length >= tamanhoNecessario)
