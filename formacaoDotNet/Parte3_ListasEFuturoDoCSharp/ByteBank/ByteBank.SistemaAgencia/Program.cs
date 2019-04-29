@@ -20,15 +20,6 @@ namespace ByteBank.SistemaAgencia
             //lista.ListarContas();
             //lista.TestaListaDeObject();
 
-            Lista<int> inteiros = new Lista<int>();
-            inteiros.AdicionarVarios(1, 2, 3, 4, 5);
-            inteiros.Adicionar("Amarelo");
-
-            Lista<string> cores = new Lista<string>();
-            cores.AdicionarVarios("Cyan", "Magenta", "Yellow", "Black");
-            cores.Adicionar(10);
-
-
             Console.ReadLine();
         }
 
@@ -40,27 +31,23 @@ namespace ByteBank.SistemaAgencia
 
         static void TesteMetodoAdicionar(ListaDeContaCorrente lista)
         {
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-
+            lista.Adicionar(new ContaCorrente(123, 0000001));
+            lista.Adicionar(new ContaCorrente(123, 0000002));
+            lista.Adicionar(new ContaCorrente(123, 0000003));
+            lista.Adicionar(new ContaCorrente(123, 0000004));
+            lista.Adicionar(new ContaCorrente(123, 0000005));
+            lista.Adicionar(new ContaCorrente(123, 0000006));
+            lista.Adicionar(new ContaCorrente(123, 0000007));
         }
 
         static void TesteMetodoRemover(ListaDeContaCorrente lista)
         {
             ContaCorrente contaTesteRemocao = new ContaCorrente(999, 9999999);
             lista.Adicionar(contaTesteRemocao);
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
-            lista.Adicionar(new ContaCorrente(123, 1234567));
+            lista.Adicionar(new ContaCorrente(123, 0000008));
+            lista.Adicionar(new ContaCorrente(123, 0000009));
+            lista.Adicionar(new ContaCorrente(123, 0000010));
+            lista.Adicionar(new ContaCorrente(123, 0000011));
             Console.WriteLine();
             lista.ListarContas();
             lista.Remover(contaTesteRemocao);
@@ -104,6 +91,22 @@ namespace ByteBank.SistemaAgencia
                 int idade = (int)listaDeIdades[i];
                 Console.WriteLine($"Idade no indice {i}: {idade}");
             }
+        }
+
+        static void TesteTipoGenerico()
+        {
+            Lista<int> inteiros = new Lista<int>();
+            inteiros.AdicionarVarios(1, 2, 3, 4, 5);
+            //inteiros.Adicionar("Amarelo");
+
+            for (int i = 0; i < inteiros.Tamanho; i++)
+            {
+                int numeroAtual = inteiros[i];
+            }
+
+            Lista<string> cores = new Lista<string>();
+            cores.AdicionarVarios("Cyan", "Magenta", "Yellow", "Black");
+            //cores.Adicionar(10);
         }
 
     }

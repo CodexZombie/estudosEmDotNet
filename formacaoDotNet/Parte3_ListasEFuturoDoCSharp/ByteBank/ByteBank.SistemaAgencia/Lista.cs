@@ -85,7 +85,7 @@ namespace ByteBank.SistemaAgencia
             }
 
             _proximaPosicao--;
-            _itens[_proximaPosicao] = null;
+            //_itens[_proximaPosicao] = null;
         }
 
         public T GetItemNoIndice(int indice)
