@@ -20,6 +20,16 @@ namespace ByteBank.SistemaAgencia
             //lista.ListarContas();
             //lista.TestaListaDeObject();
 
+            List<int> idades = new List<int>();
+            idades.AddRange(new int[] { 35, 24, 18, 17, 23 });
+
+            idades.AdicionarVarios(40, 41, 43, 45, 42);
+
+            for( int i = 0; i < idades.Count; i++)
+            {
+                Console.WriteLine(idades[i]);
+            }
+
             Console.ReadLine();
         }
 
