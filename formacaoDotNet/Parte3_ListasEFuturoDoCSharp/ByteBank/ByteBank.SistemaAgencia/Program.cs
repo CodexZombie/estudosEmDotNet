@@ -21,23 +21,21 @@ namespace ByteBank.SistemaAgencia
             //lista.ListarContas();
             //lista.TestaListaDeObject();
 
-            //List<int> idades = new List<int>();
-            //idades.AddRange(new int[] { 35, 24, 18, 17, 23 });
-            //
-            //idades.AdicionarVarios(40, 41, 43, 45, 42);
-            //
-            //for( int i = 0; i < idades.Count; i++)
-            //{
-            //    Console.WriteLine(idades[i]);
-            //}
+            var contas = new List<ContaCorrente>()
+            {
+                new ContaCorrente(123, 1234567),
+                new ContaCorrente(122, 1134560),
+                new ContaCorrente(115, 1303456),
+                new ContaCorrente(197, 1234500),
+                new ContaCorrente(110, 1234569),
+            };
 
-            var conta = new ContaCorrente(123, 1234567);
-            var gerenciador = new GerenciadorBonificacao();
-            var gerenciadores = new List<GerenciadorBonificacao>();
+            contas.Sort();
 
-            var idade = 15;
-
-            conta.Depositar(2000);
+            foreach (var conta in contas)
+            {
+                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
+            }
 
 
             Console.ReadLine();

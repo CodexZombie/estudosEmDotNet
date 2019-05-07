@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio042_MetodosDeExten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio043_TipoImplicitoVar", "Exercicio043_TipoImplicitoVar\Exercicio043_TipoImplicitoVar.csproj", "{E14AF817-55F9-4106-B398-4559559B5434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio044_Sort", "Exercicio044_Sort\Exercicio044_Sort.csproj", "{7AE0B190-6790-4B8F-96FA-4D69446C4D5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E14AF817-55F9-4106-B398-4559559B5434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E14AF817-55F9-4106-B398-4559559B5434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E14AF817-55F9-4106-B398-4559559B5434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE0B190-6790-4B8F-96FA-4D69446C4D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE0B190-6790-4B8F-96FA-4D69446C4D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE0B190-6790-4B8F-96FA-4D69446C4D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE0B190-6790-4B8F-96FA-4D69446C4D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
