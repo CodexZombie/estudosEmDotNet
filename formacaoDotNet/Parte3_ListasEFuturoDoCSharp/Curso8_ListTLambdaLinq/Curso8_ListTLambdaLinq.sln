@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio041_List", "Exerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio042_MetodosDeExtensaoGenericos", "Exercicio042_MetodosDeExtensaoGenericos\Exercicio042_MetodosDeExtensaoGenericos.csproj", "{83361369-E600-400F-A3DF-60F12D77E27F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio043_TipoImplicitoVar", "Exercicio043_TipoImplicitoVar\Exercicio043_TipoImplicitoVar.csproj", "{E14AF817-55F9-4106-B398-4559559B5434}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{83361369-E600-400F-A3DF-60F12D77E27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83361369-E600-400F-A3DF-60F12D77E27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83361369-E600-400F-A3DF-60F12D77E27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E14AF817-55F9-4106-B398-4559559B5434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14AF817-55F9-4106-B398-4559559B5434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14AF817-55F9-4106-B398-4559559B5434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14AF817-55F9-4106-B398-4559559B5434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

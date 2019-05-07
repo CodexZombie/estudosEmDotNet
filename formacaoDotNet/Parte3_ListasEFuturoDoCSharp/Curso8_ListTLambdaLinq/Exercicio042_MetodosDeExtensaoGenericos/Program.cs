@@ -12,7 +12,7 @@ namespace Exercicio042_MetodosDeExtensaoGenericos
         static void Main(string[] args)
         {
             List<int> numeros = new List<int>();
-            numeros.AdicionarVarios<int>(1, 2, 3, 4, 5);
+            numeros.AdicionarVarios(1, 2, 3, 4, 5);
 
             for (int i = 0; i < numeros.Count; i++)
             {
@@ -21,7 +21,7 @@ namespace Exercicio042_MetodosDeExtensaoGenericos
 
 
             List<string> letras = new List<string>();
-            letras.AdicionarVarios<string>("a", "b", "c", "d", "e");
+            letras.AdicionarVarios("a", "b", "c", "d", "e");
 
             for (int i = 0; i < letras.Count; i++)
             {
