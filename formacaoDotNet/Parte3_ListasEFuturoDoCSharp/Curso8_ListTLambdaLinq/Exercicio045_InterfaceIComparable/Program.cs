@@ -29,11 +29,24 @@ namespace Exercicio045_InterfaceIComparable
                 Console.WriteLine($"{p.Nome} {p.Idade}");
             }
 
+            Console.WriteLine();
             Console.WriteLine("Ordenando...");
-            Console.WriteLine("LISTA ORDENADA:");
+            Console.WriteLine("ORDENANDO POR NOME:");
             Console.WriteLine();
 
             pessoas.Sort();
+
+            foreach (var p in pessoas)
+            {
+                Console.WriteLine($"{p.Nome} {p.Idade}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Ordenando...");
+            Console.WriteLine("ORDENANDO POR IDADE:");
+            Console.WriteLine();
+
+            pessoas.Sort(new ComparaPorIdade());
 
             foreach (var p in pessoas)
             {
