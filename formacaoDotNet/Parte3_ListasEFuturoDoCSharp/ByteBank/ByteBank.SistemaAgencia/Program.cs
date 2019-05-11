@@ -28,7 +28,17 @@ namespace ByteBank.SistemaAgencia
                 new ContaCorrente(115, 1303456),
                 new ContaCorrente(197, 1234500),
                 new ContaCorrente(110, 1234569),
+                new ContaCorrente(123, 9999999),
+                new ContaCorrente(123, 0000001),
             };
+
+            foreach (var conta in contas)
+            {
+                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Ordenando a lista de contas pelo Número da conta:");
 
             contas.Sort();
 
