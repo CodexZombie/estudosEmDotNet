@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio044_Sort", "Exerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio045_InterfaceIComparable", "Exercicio045_InterfaceIComparable\Exercicio045_InterfaceIComparable.csproj", "{D636CABC-5F4B-42E0-8CF1-55F671665C57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio046_OrderBy", "Exercicio046_OrderBy\Exercicio046_OrderBy.csproj", "{0423270A-1734-48FC-AA02-076E6FACAE04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D636CABC-5F4B-42E0-8CF1-55F671665C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D636CABC-5F4B-42E0-8CF1-55F671665C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D636CABC-5F4B-42E0-8CF1-55F671665C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0423270A-1734-48FC-AA02-076E6FACAE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0423270A-1734-48FC-AA02-076E6FACAE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0423270A-1734-48FC-AA02-076E6FACAE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0423270A-1734-48FC-AA02-076E6FACAE04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
