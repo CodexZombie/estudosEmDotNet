@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassesAuxiliares\ClassesAuxiliares.csproj">
+      <Project>{A2D0EAB2-A927-44F2-B5E6-6CB11C6713DA}</Project>
+      <Name>ClassesAuxiliares</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

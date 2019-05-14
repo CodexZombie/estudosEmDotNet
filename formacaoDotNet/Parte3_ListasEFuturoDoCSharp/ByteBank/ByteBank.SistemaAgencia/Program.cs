@@ -25,39 +25,34 @@ namespace ByteBank.SistemaAgencia
             {
                 new ContaCorrente(999, 1234567),
                 new ContaCorrente(122, 1134560),
+                null,
                 new ContaCorrente(115, 1303456),
                 new ContaCorrente(197, 1234500),
                 new ContaCorrente(100, 1234569),
+                null,
+                null,
                 new ContaCorrente(123, 9999999),
                 new ContaCorrente(123, 1000000),
             };
 
-            foreach (var conta in contas)
+            var contasOrdenadas = contas.OrderBy(conta => {
+                if (conta == null)
+                {
+                    return int.MaxValue;
+                }
+                return conta.Agencia;
+            });
+
+            foreach (var conta in contasOrdenadas)
             {
-                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
+                if (conta != null)
+                {
+                    Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
+                }
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Ordenando por NÚMERO:");
-            Console.WriteLine();
+            
 
-            contas.Sort();
-
-            foreach (var conta in contas)
-            {
-                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Ordenando por AGÊNCIA:");
-            Console.WriteLine();
-
-            contas.Sort(new Comparadores.ComparadorContaCorrentePorAgencia());
-
-            foreach (var conta in contas)
-            {
-                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
-            }
 
             Console.ReadLine();
         }
