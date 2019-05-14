@@ -8,19 +8,36 @@ namespace Exercicio046_OrderBy
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             var pessoas = GerarLista();
             
             Imprime(pessoas);
+
+            IOrderedEnumerable<Pessoa> pessoasOrdenado;
             
-            var pessoasOrdenado = pessoas.OrderBy(Pessoa => Pessoa.Idade);
+
+            pessoasOrdenado = pessoas.OrderBy(pessoa => pessoa.Idade);
+
             ImprimeOrdenado(pessoasOrdenado, "Idade");
-            
-            pessoasOrdenado = pessoas.OrderBy(Pessoa => Pessoa.Altura);
+            //---> x => x.parametro é uma expressão lambda;
+            //---> O Método OrderBy não trata referências nulas;
+            //---> Ao se deparar com uma referência nula uma exceção de referência nula será lançada;
+            //---> Como o método recebe uma expressão lambda, pode ser expandido para receber uma lógica expecífica.
+
+            pessoasOrdenado = pessoas.OrderBy(pessoa => pessoa.Altura);
             ImprimeOrdenado(pessoasOrdenado, "Altura");
 
-            pessoasOrdenado = pessoas.OrderBy(Pessoa => Pessoa.Nome);
+            pessoas.AddRange(new Pessoa[] { null, null, null });
+            pessoasOrdenado = pessoas.OrderBy(pessoa =>
+            {
+                if (pessoa == null)
+                {
+                    return "zzzz";
+                }
+                return pessoa.Nome;
+            });
             ImprimeOrdenado(pessoasOrdenado, "Nome");
 
             Console.ReadLine();
@@ -67,8 +84,16 @@ namespace Exercicio046_OrderBy
             Console.WriteLine();
             foreach (var p in lista)
             {
-                Console.WriteLine($"Idade: {p.Idade}, Altura: {p.Altura}, Nome: {p.Nome} ");
+                if (p == null)
+                {
+                    Console.WriteLine("Referência nula");
+                }
+                else
+                {
+                    Console.WriteLine($"Idade: {p.Idade}, Altura: {p.Altura}, Nome: {p.Nome} ");
+                }
             }
+            
             Console.WriteLine();
         }
     }
