@@ -13,14 +13,6 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            //ListaDeContaCorrente lista = TesteCriaListaDeContas();
-            //TesteMetodoAdicionar(lista);
-            //TesteMetodoRemover(lista);
-            //TesteIndexador(lista);
-            //TesteAdicionarVarios(lista);
-            //lista.ListarContas();
-            //lista.TestaListaDeObject();
-
             var contas = new List<ContaCorrente>()
             {
                 new ContaCorrente(999, 1234567),
@@ -35,24 +27,14 @@ namespace ByteBank.SistemaAgencia
                 new ContaCorrente(123, 1000000),
             };
 
-            var contasOrdenadas = contas.OrderBy(conta => {
-                if (conta == null)
-                {
-                    return int.MaxValue;
-                }
-                return conta.Agencia;
-            });
+            var contasOrdenadas = contas
+                .Where(conta => conta != null)
+                .OrderBy(conta => conta.Numero);
 
             foreach (var conta in contasOrdenadas)
             {
-                if (conta != null)
-                {
-                    Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
-                }
+                Console.WriteLine($"Número: {conta.Numero} / Agência: {conta.Agencia}");
             }
-
-            
-
 
             Console.ReadLine();
         }
