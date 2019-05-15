@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace Curso9_IOStreams
 {
-    // Exercicio 048 - FileStream
+    
     class Program
     {
         static void Main(string[] args)
         {
-            var arquivoURL = "D:\\estudosEmDotNet\\formacaoDotNet\\Parte3_ListasEFuturoDoCSharp\\Curso9_IOStreams\\contas.txt";
+            // Exercicio 048 - FileStream
+            // Exercicio 049 - Encoding
 
+            var arquivoURL = "../../../contas.txt";
             var fluxoDoArquivo = new FileStream(arquivoURL, FileMode.Open);
-
             var buffer = new byte[1024]; // 1 kb
             var bytesLidos = -1;
 
@@ -30,12 +31,18 @@ namespace Curso9_IOStreams
             Console.ReadLine();
         }
 
+        
+
         static void EscreverBuffer(byte[] buffer)
         {
+            //var utf8 = new UTF8Encoding();
+            //var texto = utf8.GetString(buffer);
+            //Console.Write(texto);
+
             foreach (var b in buffer)
             {
-                Console.Write(b);
-                Console.Write(" ");
+                Console.Write((char)b);
+                //Console.Write(" ");
             }
         }
     }
