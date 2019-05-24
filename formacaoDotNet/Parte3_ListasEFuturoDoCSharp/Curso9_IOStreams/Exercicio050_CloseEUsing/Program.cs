@@ -14,8 +14,6 @@ namespace Exercicio050_CloseEUsing
             // EXERCICIO 050 - MÉTODOS CLOSE E USING
 
             var arquivoURL = "../../../contas.txt";
-
-
             
             using (var fluxoDoArquivo = new FileStream(arquivoURL, FileMode.Open))
             {
@@ -30,7 +28,6 @@ namespace Exercicio050_CloseEUsing
                     EscreverBuffer(buffer);
                 }
             }
-
 
             //fluxoDoArquivo.Close();
 
