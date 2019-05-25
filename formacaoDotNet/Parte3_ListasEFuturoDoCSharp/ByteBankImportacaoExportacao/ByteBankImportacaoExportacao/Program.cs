@@ -12,8 +12,8 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-            //var arquivoURL = "../../../../Curso9_IOStreams/contas.txt";
-
+            CriarArquivoComWriter();
+            Console.WriteLine("Aplicação finalizada...");
             Console.ReadLine();
         }
     }
