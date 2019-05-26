@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 namespace ByteBankImportacaoExportacao
@@ -29,6 +30,25 @@ namespace ByteBankImportacaoExportacao
             using (var escritor = new StreamWriter(fluxoDeArquivo))
             {
                 escritor.Write("456,65465,456.0,Pedro da Silva");
+            }
+        }
+
+        static void TestaEscrita()
+        {
+            var caminhoDoArquivo = "teste.txt";
+
+            using (var fluxoDoArquivo = new FileStream(caminhoDoArquivo, FileMode.Create))
+            using (var escritor = new StreamWriter(fluxoDoArquivo))
+            {
+                for (int i = 0; i < 100000000; i++)
+                {
+                    escritor.WriteLine($"Linha {i}");
+
+                    Console.WriteLine($"Linha {i} foi escrita no arquivo." +
+                        $" Tecle Enter para adicionar mais uma.");
+                    escritor.Flush();
+                    Console.ReadLine();
+                }
             }
         }
     }
