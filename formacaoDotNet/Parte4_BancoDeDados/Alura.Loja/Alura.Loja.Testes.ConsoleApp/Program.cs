@@ -11,14 +11,29 @@ namespace Alura.Loja.Testes.ConsoleApp
         static void Main(string[] args)
         {
             //GravarUsandoAdoNet();
-            GravarUsandoEntity();
+            //GravarUsandoEntity();
+            RecuperaProdutos();
+
+            Console.ReadLine();
+        }
+
+        private static void RecuperaProdutos()
+        {
+            using (var repo = new LojaContext())
+            {
+                IList<Produto> produtos = repo.Produtos.ToList();
+                foreach (var item in produtos)
+                {
+                    Console.WriteLine(item.Nome);
+                }
+            }
         }
 
         static void GravarUsandoEntity()
         {
             Produto p = new Produto();
-            p.Nome = "Harry Potter e a Ordem da Fênix";
-            p.Categoria = "Livros";
+            p.Nome = "Cassino Royale";
+            p.Categoria = "Filmes";
             p.Preco = 19.89;
 
             using (var contexto = new LojaContext())
