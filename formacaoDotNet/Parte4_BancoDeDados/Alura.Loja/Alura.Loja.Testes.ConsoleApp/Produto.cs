@@ -9,7 +9,7 @@
 
         public override string ToString()
         {
-            return "Produto: " + this.Nome;
+            return $"Produto: {Id}, {Nome}, {Categoria}, R${Preco}.";
         }
     }
 }
