@@ -6,13 +6,38 @@ using System;
 using System.Collections.Generic;
 
 
-
-
 namespace Alura.Loja.Testes.ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            var fulano = new Cliente();
+            fulano.Nome = "Fulano de Tal";
+            fulano.EnderecoDeEntrega = new Endereco()
+            {
+                Numero = 12,
+                Logradouro = "Rua da Cidade",
+                Complemento = "Sobrado",
+                Bairro = "Centro",
+                Cidade = "Cidade"
+            };
+
+            using (var contexto = new LojaContext())
+            {
+                var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
+                var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(SqlLoggerProvider.Create());
+
+                contexto.Clientes.Add(fulano);
+                contexto.SaveChanges();
+            }
+
+
+            Console.ReadLine();
+        }
+
+        private static void MuitosParaMuitos()
         {
             var p1 = new Produto() { Nome = "Suco de Laranja", Categoria = "Bebidas", PrecoUnitario = 8.79, Unidade = "Litros" };
             var p2 = new Produto() { Nome = "Café", Categoria = "Bebidas", PrecoUnitario = 12.45, Unidade = "Gramas" };
@@ -26,7 +51,7 @@ namespace Alura.Loja.Testes.ConsoleApp
             promocaoDePascoa.IncluiProduto(p2);
             promocaoDePascoa.IncluiProduto(p3);
 
-            using(var contexto = new LojaContext())
+            using (var contexto = new LojaContext())
             {
                 var serviceProvider = contexto.GetInfrastructure<IServiceProvider>();
                 var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
@@ -38,8 +63,6 @@ namespace Alura.Loja.Testes.ConsoleApp
                 ExibeEntries(contexto.ChangeTracker.Entries());
                 contexto.SaveChanges();
             }
-
-            Console.ReadLine();
         }
 
         private static void ExibeEntries(IEnumerable<EntityEntry> entries)
