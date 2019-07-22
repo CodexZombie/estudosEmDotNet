@@ -20,10 +20,10 @@ Acompanhamento das aulas da Alura na Formação **_Desenvolvedor .NET_**
     <dd>Parte 7 - Array, Indexadores, arg params, Genéricos; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-string-regex-object" target="_blank">certificado</a></dd>
     <dd>Parte 8 - List&lt;T&gt;, métodos de extensão, VAR, Sort, IComparable, IComparer, OrderBy, Exp. Lambda, Linq e Where; <a href="" target="_blank">certificado</a></dd>
     <dd>Parte 9 - FileStream, StreamReader, StramWriter (Parse), Flush, Binarios, Console Streams; <a href="https://cursos.alura.com.br/certificate/CodexZombie/csharp-io" target="_blank">certificado</a></dd>
-<!--
     <br>
     <dt>Curso 4 - Banco de Dados com Entity Framework Core:</dt>
-    <dd>Parte 10 - Manipulação de objetos, SQL, modelo de classes, cardinalidade, consultas; <a href="" target="_blank">certificado</a></dd>
+    <dd>Parte 10 - Manipulação de objetos, SQL, modelo de classes, cardinalidade, consultas; <a href="https://cursos.alura.com.br/certificate/CodexZombie/entity-framework-core" target="_blank">certificado</a></dd>
+<!--
     <br>
     <dt>Curso 5 - Web / ASP.NET Core MVC:</dt>
     <dd>Parte 12 - Servidor web, requisições, roteamento do AspNet Core, UX, MVC; <a href="" target="_blank">certificado</a></dd>
